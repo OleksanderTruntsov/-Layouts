@@ -1,0 +1,79 @@
+    /* Medium Devices */
+
+@media only screen and (max-width: 1120px) {
+    .footer-contact {
+        text-align: center;
+        width: 70%;
+    }
+    
+    .list-contacts,
+    .list-twitter,
+    .list-popular-posts,
+    .list-about-us {
+        width: 43%;
+        text-align: left;
+    }
+    
+    .list-popular-posts {
+        width: 43%;
+        margin-right: 0;
+        text-align: left;
+    }
+}
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width: 768px) {
+        .header-nav {
+            width: 100%;
+        }
+        .list-menu {
+            display: none;
+        }
+        .list-menu li {
+           display: block;
+           background: rgba(0, 0, 0, 0.4);
+           margin: 0;
+           text-align: center;
+        }
+
+        .list-menu li a {
+            color: #fff;
+        }
+        #burger-menu {
+            display: inline-block;
+            margin-bottom: 37px;
+        }
+        .list-twitter,
+        .list-popular-posts {
+            display: none;
+        }
+        .section-title {
+            text-align: center;
+        }
+        .service-list li {
+            width: 45%;
+        }
+        
+        .list-contacts,
+        .list-about-us {
+            width: 100%;
+        }
+        .footer-copyright {
+            text-align: center;
+        }
+        
+    }
+
+    @media only screen and (max-width: 810px) {
+        .latest-works-list li {
+            width: 65%;
+            text-align: center;
+            }
+    }
+
+    /* Small Devices, Phones */
+    @media only screen and (max-width: 480px) {
+        .service-list li {
+            width: 90%;
+        }
+    }
