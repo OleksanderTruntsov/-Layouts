@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header class="main-header">
+        <h1 class="logo">
+            <a href="" class="logo__link">
+                <img class="logo__img" src="img/logo.png" alt="Infinite site"/> <span class="logo__text">infinite</span>
+            </a>
+        </h1><nav class="top-navbar">
+            <div class="top-navbar__account account">
+                <span class="account__greeting">Good morning <a class="account__username" href="#">Daenerys</a></span>
+                <a class="account__avatar-box" href="#">
+                    <img class="account__avatar" src="img/avatar.jpg" alt="Daenerys"/>
+                </a>
+                <a href="#" class="account__logout"><i class="icon icon-switch"></i></a>
+            </div>
+            <ul class="top-navbar__notification notification">
+                <li class="notification__item">
+                    <a href="#" class="notification__link">Notifications<span class="notification__amount notification__amount_notification">3</span></a>
+                </li><li class="notification__item">
+                    <a href="#" class="notification__link">Messages<span class="notification__amount notification__amount_messages">12</span></a>
+                </li><li class="notification__item">
+                    <a href="#" class="notification__link">Tasks<span class="notification__amount notification__amount_tasks">7</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <aside class="left-aside">
+          <ul class="aside-nav">
+            <li class="aside-nav__item aside-nav__item_active">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-dashboard"></i><span class="aside-nav__text">Dashboard</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-posts"></i><span class="aside-nav__text">Posts</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-profile"></i><span class="aside-nav__text">Users</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-media"></i><span class="aside-nav__text">Media</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-pages"></i><span class="aside-nav__text">Pages</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-comment"></i><span class="aside-nav__text">Comments</span><span class="aside-nav__amount">7</span></a>
+            </li>
+            <li class="aside-nav__gap"></li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-forum"></i><span class="aside-nav__text">Forum</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-topics"></i><span class="aside-nav__text">Topics</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-replies"></i><span class="aside-nav__text">Replies</span><span class="aside-nav__amount">1</span></a>
+            </li>
+            <li class="aside-nav__gap"></li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-appearance"></i><span class="aside-nav__text">Appearance</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-plugins"></i><span class="aside-nav__text">Plugins</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-tools"></i><span class="aside-nav__text">Tools</span></a>
+            </li>
+            <li class="aside-nav__item">
+              <a href="#" class="aside-nav__link"><i class="aside-nav__icon icon icon-setting"></i><span class="aside-nav__text">Settings</span></a>
+            </li>
+          </ul>
+        </aside>
+        <div class="content">
+            <div class="widget">
+                <div class="widget__item widget__item_selected panel panel_overflow">
+                    <div class=" widget__logo widget__logo_visits">
+                        <i class="icon icon-visitors"></i>
+                    </div>
+                    <div class="widget__content">
+                        <h2 class="widget__title">Today's visitors</h2>
+                        <p class="widget__amount">3,352</p>
+                    </div>
+                </div>
+                <div class="widget__item panel panel_overflow">
+                    <div class="widget__logo widget__logo_revenue">
+                        <i class="icon icon-stats"></i>
+                    </div>
+                    <div class="widget__content">
+                        <h2 class="widget__title">Month revenue</h2>
+                        <p class="widget__amount">$1,152.00</p>
+                    </div>
+                </div>
+                <div class="widget__item panel panel_overflow">
+                    <div class="widget__logo widget__logo_mail">
+                        <i class="icon icon-send"></i>
+                    </div>
+                    <div class="widget__content">
+                        <h2 class="widget__title">Mail</h2>
+                        <p class="widget__amount">13 <span class="widget__amount_description">new messages</span></p>
+                    </div>
+                </div>
+                <div class="widget__item panel panel_overflow">
+                    <div class="widget__logo widget__logo_booking">
+                        <i class="icon icon-bookings"></i>
+                    </div>
+                    <div class="widget__content">
+                        <h2 class="widget__title">Bookings</h2>
+                        <p class="widget__amount">78</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel_overflow">
+                <div class="panel__header">
+                    <h2 class="panel__title">
+                        Traffic
+                    </h2><div class="panel__utils">
+                        <span class="panel__minimize"><i class="icon icon-play"></i></span>
+                        <span class="panel__close"><i class="icon icon-close"></i></span>
+                    </div>
+                </div>
+                <div id="trafficArea" class="panel__body">
+                    <div id="trafficAreaChart" class="traffic-area-chart">
+                    </div>
+                    <div class="traffic-btn-panel">
+                        <ul class="btn-group">
+                            <li class="btn-group__item btn-group__item_active">
+                                Day
+                            </li><li class="btn-group__item">
+                                Week
+                            </li><li class="btn-group__item">
+                                Month
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel__header">
+                    <h2 class="panel__title">
+                        Today's Visits
+                    </h2><div class="panel__utils">
+                    <span class="panel__minimize"><i class="icon icon-play"></i></span>
+                    <span class="panel__close"><i class="icon icon-close"></i></span>
+                </div>
+                </div>
+                <div class="panel__body">
+                    <div class="panel__row">
+                        <div id="visitsColumnChart" class="visits-column-chart">
+                        </div>
+                        <div class="pie-item rateChart">
+                            <div id="rateChart" class="pie-item__chart"></div>
+                            <h3 class="pie-item__title">Bounce Rate</h3>
+                        </div>
+                        <div class="pie-item visitsChart">
+                            <div id="visitsChart" class="pie-item__chart"></div>
+                            <h3 class="pie-item__title">New Visits</h3>
+                        </div>
+                        <div class="pie-item trafficChart">
+                            <div id="trafficChart" class="pie-item__chart"></div>
+                            <h3 class="pie-item__title">Search Traffic</h3>
+                        </div>
+                    </div>
+                    <div class="panel__gap"></div>
+                    <div class="panel__row">
+                        <div class="well">
+                            <p class="visits-description"><strong class="visits-description__amount">1,452,587</strong> people visited this site</p>
+                            <div class="well__box">
+                                <ul class="areas">
+                                    <li class="areas__item">
+                                        <h3 class="areas__title">Visits</h3>
+                                        <p class="areas__amount">3,352</p>
+                                        <div id="visitsAreaChart" class="area-chart areas__chart"></div>
+                                    </li><li class="areas__item">
+                                    <h3 class="areas__title">Unique Visits</h3>
+                                    <p class="areas__amount">1,627</p>
+                                    <div id="uniqueVisitsAreaChart" class="area-chart areas__chart"></div>
+                                </li><li class="areas__item">
+                                    <h3 class="areas__title">Previews</h3>
+                                    <p class="areas__amount">6,048</p>
+                                    <div id="previewsAreaChart" class="area-chart areas__chart"></div>
+                                </li>
+                                </ul>
+                                <p class="statistic">Page per visits: <strong class="stistic__index">1.78</strong></p><p class="statistic">Average Visit Duration: <strong class="stistic__index">00:01:12</strong></p>
+                            </div>
+                        </div>
+                        <div class="table-container browser-visits">
+                            <table class="visits-table">
+                                <caption class="visits-table__title">Visits by Browser</caption>
+                                <tbody>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Chrome</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">1,712</td>
+                                </tr>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Firefox</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">843</td>
+                                </tr>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Safari</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">325</td>
+                                </tr>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Internet Explorer</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">183</td>
+                                </tr>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Opera</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">97</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-container mobile-visits">
+                            <table class="visits-table">
+                                <caption class="visits-table__title">Mobile Overview</caption>
+                                <tbody>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Desktop</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">3,021</td>
+                                </tr>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Mobile</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">163</td>
+                                </tr>
+                                <tr class="visits-table__row">
+                                    <td class="visits-table__cell visits-table__cell_place">Tablet</td>
+                                    <td class="visits-table__cell visits-table__cell_amount">147</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel__header">
+                    <h2 class="panel__title">
+                        Recent Order List
+                    </h2><div class="panel__utils">
+                        <span class="panel__minimize"><i class="icon icon-play"></i></span>
+                        <span class="panel__close"><i class="icon icon-close"></i></span>
+                    </div>
+                </div>
+                <div class="panel__body">
+                    <table class="order-table">
+                        <thead class="order-table__head">
+                        <tr class="order-table__row-head">
+                            <th class="order-table__head-cell">From</th>
+                            <th class="order-table__head-cell">Contact</th>
+                            <th class="order-table__head-cell">Amount</th>
+                            <th class="order-table__head-cell">Status</th>
+                            <th class="order-table__head-cell order-table__head-cell_order"><a href="#" class="btn">All Orders</a></th>
+                        </tr>
+                        </thead>
+                        <tbody class="order-table__main">
+                        <tr class="order-table__row">
+                            <td class="order-table__cell order-table__cell_from"><i class="square square_blue"></i>Lion KC</td>
+                            <td class="order-table__cell order-table__cell_contact"><a class="order-table__contact-link" href="#">Robin Van Persie</a></td>
+                            <td class="order-table__cell order-table__cell_amount">$245.00</td>
+                            <td class="order-table__cell order-table__cell_status"><span class="label label_success">Paid</span></td>
+                            <td class="order-table__cell order-table__cell_order"><a href="#" class="order-table__order-link"><i class="order-table__order-link_icon icon icon-search"></i>View</a></td>
+                        </tr>
+                        <tr class="order-table__row">
+                            <td class="order-table__cell order-table__cell_from"><i class="square square_orange"></i>Lorem Inc.</td>
+                            <td class="order-table__cell order-table__cell_contact"><a class="order-table__contact-link" href="#">Chicharrito</a></td>
+                            <td class="order-table__cell order-table__cell_amount">$1.235.00</td>
+                            <td class="order-table__cell order-table__cell_status"><span class="label label_success">Paid</span></td>
+                            <td class="order-table__cell order-table__cell_order"><a href="#" class="order-table__order-link"><i class="order-table__order-link_icon icon icon-search"></i>View</a></td>
+                        </tr>
+                        <tr class="order-table__row">
+                            <td class="order-table__cell order-table__cell_from"><i class="square square_green"></i>VS Design</td>
+                            <td class="order-table__cell order-table__cell_contact"><a class="order-table__contact-link" href="#">Wayne Rooney</a></td>
+                            <td class="order-table__cell order-table__cell_amount">$2.245.00</td>
+                            <td class="order-table__cell order-table__cell_status"><span class="label label_warning">Pending</span></td>
+                            <td class="order-table__cell order-table__cell_order"><a href="#" class="order-table__order-link"><i class="order-table__order-link_icon icon icon-search"></i>View</a></td>
+                        </tr>
+                        <tr class="order-table__row">
+                            <td class="order-table__cell order-table__cell_from"><i class="square square_pink"></i>ABC Lounge</td>
+                            <td class="order-table__cell order-table__cell_contact"><a class="order-table__contact-link" href="#">David de Gea</a></td>
+                            <td class="order-table__cell order-table__cell_amount">$450.00</td>
+                            <td class="order-table__cell order-table__cell_status"><span class="label label_danger">Cancelled</span></td>
+                            <td class="order-table__cell order-table__cell_order"><a href="#" class="order-table__order-link"><i class="order-table__order-link_icon icon icon-search"></i>View</a></td>
+                        </tr>
+                        <tr class="order-table__row">
+                            <td class="order-table__cell order-table__cell_from"><i class="square square_dark-yellow"></i>Retail Shop Inc.</td>
+                            <td class="order-table__cell order-table__cell_contact"><a class="order-table__contact-link" href="#">Nani</a></td>
+                            <td class="order-table__cell order-table__cell_amount">$845.00</td>
+                            <td class="order-table__cell order-table__cell_status"><span class="label label_success">Paid</span></td>
+                            <td class="order-table__cell order-table__cell_order"><a href="#" class="order-table__order-link"><i class="order-table__order-link_icon icon icon-search"></i>View</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/vendors/jquery.min.js"></script>
+<script src="js/vendors/highcharts.js"></script>
+<script src="js/diagrams.js"></script>
+<script src="js/interactive.js"></script>
+</body>
+</html>
