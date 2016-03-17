@@ -1,0 +1,326 @@
+html, body, .clean {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nav-button {
+    display: inline-block;
+    color: #8795b5;
+    padding: 7px;
+    font-size: 20px;
+    border: 1px solid #dadfea;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    transition: .4s;
+    background: #8795b5;
+    border: 1px solid #8795b5;
+    color: #eef1f7;
+}
+/*
+    Menu section
+*/
+.menu-section {
+    width: 15%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.logo a {
+    width: 100%;
+    text-align: center;
+    background: #eef1f7;
+    border: 1px solid #dadfea;
+    font-size: 26px;
+    color: #687189;
+    display: inline-block;
+    padding: 11px 0;
+}
+.logo a:hover {
+    transition: .6s;
+    border: 1px solid #8795b5;
+    background-color: #8795b5;
+    color: #eef1f7;
+}
+
+.menu-section .menu-list {
+    position: relative;
+    background-color:  #364760;
+    height: calc(100% - 50px);
+}
+
+.menu-list menu {
+    padding: 15px 0;
+    border-bottom: 4px solid #2a394f;
+}
+
+.menu-list .icon-menu {
+    color: #6183a6;
+    padding: 0 12px 0 0;
+    font-size: 20px;
+}
+
+.menu-item {
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    padding: 11px 25px;
+    border-left: 2px solid transparent;
+}
+
+menu .menu-item:hover {
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    background-color: #2a394f;
+    border-color: #00adef;
+}
+
+.menu-item-name {
+    position: absolute;
+    top: 39%;
+}
+
+.new-letter {
+    width: 27px;
+    position: absolute;
+    top: 33%;
+    text-align: center;
+    right: 18px;
+    padding: 3px 0;
+    border-radius: 9px;
+    background-color: #fe685a;
+}
+
+.indicator-type-massage {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 25%;
+    right: 20px;
+    border-radius: 3px;
+}
+
+.type-client { background-color: #7974d0; }
+.type-memo { background-color: #01caa0; }
+.type-family { background-color: #f8975a; }
+.type-work { background-color: #00adef; }
+.type-read { background-color: rgb(255, 94, 84); }
+.list-type-massage { padding-top: 15px; }
+
+.list-type-massage .menu-item {
+    padding: 12px 25px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.list-settings {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #2a394f;
+}
+.settings-item {
+    display: inline-block;
+    border-top: 2px solid transparent;
+    color: #6183a6;
+    padding: 7px 9px;
+    font-size: 20px;
+}
+.settings-item:hover {
+    transition: .4s;
+    border-color: #00adef;
+    cursor: pointer;
+    background: #364760;
+    color: #fff;
+}
+/*
+   Contacts section
+*/
+.contacts-section {
+    width: 35%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.contacts-section-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border: 1px solid #dadfea;
+    background-color:  #eef1f7;
+}
+.contacts-section-nav .number-posts {
+    color:  #687189;
+    font-size: 14px;
+    padding: 11px;
+}
+.list-massage {
+    overflow: auto;
+    height: calc(100vh - 50px);
+}
+.massage-item-naw {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    color:  #c9ced1;
+}
+.massage-item-naw .icon-star-empty:hover {
+    color: #f4bc2b;
+    cursor: pointer;
+}
+.name-user {
+    display: inline-block;
+    width: 250px;
+    color:  #ababab;
+    font-size: 12px;
+    font-weight: 400;
+}
+.sending-time {
+    color:  #4f4f4f;
+    font-size: 12px;
+    font-weight: 400;
+}
+.small-user-foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.massage-item {
+    padding: 10px 10px 10px 8px;
+    border-right: 1px solid #dadfea;
+    border-bottom: 1px solid #dadfea;
+    border-left: 4px solid transparent;
+}
+
+.type-client-message { border-left-color: #7974d0; }
+.type-memo-message { border-left-color: #01caa0; }
+.type-family-message { border-left-color: #f8975a }
+.type-work-message { border-left-color: #00adef; }
+.type-read-message { border-left-color: rgb(255, 94, 84); }
+
+.massage-item-content {
+    display: flex;
+    justify-content: center;
+}
+.massage-item-content-wrapper {
+    padding: 0 0 0 20px;
+}
+.massage-title {
+    color:  #4f4f4f;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.massage-text {
+    color:  #ababab;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px
+}
+/*
+   Letters section
+*/
+.letters-section {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.letters-section-nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dadfea;
+    background-color: #eef1f7;
+    padding: 6px 10px;
+    margin-left: -1px;
+}
+
+.nav-button-list li {
+    display: inline-block;
+    margin-left: -1px;
+}
+
+.search-wrapper {
+    display: inline-block;
+    width: 250px;
+    color: #8795b5;
+    background: #fff;
+    border-radius: 15px;
+    padding: 8px 2px;
+    border: 1px solid #dadfea;
+}
+
+.search-wrapper .icon-search {
+    vertical-align: middle;
+    padding: 0 7px;
+}
+
+.search-wrapper input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.title-letter {
+    padding: 0 0 10px 0;
+    color: #4f4f4f;
+    font-size: 32px;
+    font-weight: 300;
+    border-bottom: 1px solid #e8edf2;
+}
+
+.letters-item {
+    padding: 20px 30px;
+}
+
+.letters-item .icon-star-empty {
+    color: #c9ced1;
+}
+
+.letters-item .icon-star-empty:hover {
+    color: #f4bc2b;
+    cursor: pointer;
+}
+
+.info-letter {
+    position: relative;
+    padding: 10px 0 30px;
+}
+
+.name-sender {
+    padding: 0 1px 0 10px;
+    color: #2a80b9;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.name-recipient {
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.time-sender {
+    position: absolute;
+    top: 24%;
+    right: 30px;
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.content-letters {
+    color: #4f4f4f;
+    padding-right: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}

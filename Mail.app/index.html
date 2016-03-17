@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail.app</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+
+</head>
+<body>
+<div class="clean">
+    <!--Menu section-->
+    <section class="menu-section">
+        <header>
+            <h1 class="logo"><a href="#">Mail.app</a></h1>
+        </header>
+        <main class="menu-list">
+            <menu>
+                <li class="menu-item">
+                    <span class="icon-menu icon-drawer"></span>
+                    <span class="menu-item-name">Inbox</span>
+                    <span class="new-letter">12</span>
+                </li>
+                <li class="menu-item">
+                    <span class="icon-menu icon-star-empty"></span>
+                    <span class="menu-item-name">Starred</span>
+                    <span class="new-letter">1</span>
+                </li>
+                <li class="menu-item">
+                    <span class="icon-menu icon-file-text2"></span>
+                    <span class="menu-item-name">Draft</span>
+                </li>
+                <li class="menu-item">
+                    <span class="icon-menu icon-envelop"></span>
+                    <span class="menu-item-name">Sent Mail</span>
+                </li>
+                <li class="menu-item">
+                    <span class="icon-menu icon-bin2"></span>
+                    <span class="menu-item-name">Trash</span>
+                </li>
+            </menu>
+            <ul class="list-type-massage">
+                <li class="menu-item">
+                    <span>Clients</span>
+                    <span class="indicator-type-massage type-client"></span>
+                </li>
+                <li class="menu-item">
+                    <span>Memo</span>
+                    <span class="indicator-type-massage type-memo"></span>
+                </li>
+                <li class="menu-item">
+                    <span>Family</span>
+                    <span class="indicator-type-massage type-family"></span>
+                </li>
+                <li class="menu-item">
+                    <span>Works</span>
+                    <span class="indicator-type-massage type-work"></span>
+                </li>
+                <li class="menu-item">
+                    <span>To Read</span>
+                    <span class="indicator-type-massage type-read"></span>
+                </li>
+            </ul>
+            <ul class="list-settings">
+                <li class="settings-item">
+                    <span class="icon-cog"></span>
+                </li>
+                <li class="settings-item">
+                    <span class="icon-user-plus"></span>
+                </li>
+            </ul>
+        </main>
+    </section>
+
+    <!--Contacts section-->
+    <section class="contacts-section">
+        <header>
+            <ul class="contacts-section-nav">
+                <li><span class="nav-button icon-pencil2"></span></li>
+                <li class="number-posts">
+                    <span>All Inboxes</span>
+                    <span>(12904)</span>
+                </li>
+                <li><span class="nav-button icon-spinner11"></span></li>
+            </ul>
+        </header>
+        <main>
+            <ul class="list-massage" id="wrapper">
+                <li class="massage-item type-memo-message">
+                    <div class="massage-item-naw">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-user">Louis Van Gaal</span>
+                        <span class="sending-time">5:46 PM</span>
+                    </div>
+                    <div class="massage-item-content">
+                        <img class="small-user-foto" src="images/user_1.jpg" alt="Foto user">
+                        <div class="massage-item-content-wrapper">
+                            <p class="massage-title">Mark my words!</p>
+                            <span class="massage-text">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilis...</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="massage-item type-family-message">
+                    <div class="massage-item-naw">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-user">Louis Van Gaal</span>
+                        <span class="sending-time">5:46 PM</span>
+                    </div>
+                    <div class="massage-item-content">
+                        <img class="small-user-foto" src="images/user_2.jpg" alt="Foto user">
+                        <div class="massage-item-content-wrapper">
+                            <p class="massage-title">Mark my words!</p>
+                            <span class="massage-text">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilis...</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="massage-item type-client-message">
+                    <div class="massage-item-naw">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-user">Louis Van Gaal</span>
+                        <span class="sending-time">5:46 PM</span>
+                    </div>
+                    <div class="massage-item-content">
+                        <img class="small-user-foto" src="images/user_1.jpg" alt="Foto user">
+                        <div class="massage-item-content-wrapper">
+                            <p class="massage-title">Mark my words!</p>
+                            <span class="massage-text">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilis...</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="massage-item type-read-message">
+                    <div class="massage-item-naw">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-user">Louis Van Gaal</span>
+                        <span class="sending-time">5:46 PM</span>
+                    </div>
+                    <div class="massage-item-content">
+                        <img class="small-user-foto" src="images/user_2.jpg" alt="Foto user">
+                        <div class="massage-item-content-wrapper">
+                            <p class="massage-title">Mark my words!</p>
+                            <span class="massage-text">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilis...</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="massage-item type-work-message">
+                    <div class="massage-item-naw">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-user">Louis Van Gaal</span>
+                        <span class="sending-time">5:46 PM</span>
+                    </div>
+                    <div class="massage-item-content">
+                        <img class="small-user-foto" src="images/user_1.jpg" alt="Foto user">
+                        <div class="massage-item-content-wrapper">
+                            <p class="massage-title">Mark my words!</p>
+                            <span class="massage-text">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilis...</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="massage-item">
+                    <div class="massage-item-naw">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-user">Louis Van Gaal</span>
+                        <span class="sending-time">5:46 PM</span>
+                    </div>
+                    <div class="massage-item-content">
+                        <img class="small-user-foto" src="images/user_2.jpg" alt="Foto user">
+                        <div class="massage-item-content-wrapper">
+                            <p class="massage-title">Mark my words!</p>
+                            <span class="massage-text">Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilis...</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </section>
+
+    <!--Letters-section-->
+    <section class="letters-section">
+        <header class="letters-section-nav">
+            <ul class="nav-button-list">
+                <li><span class="nav-button icon-undo2"></span></li>
+                <li><span class="nav-button icon-drawer2"></span></li>
+                <li><span class="nav-button icon-bin2"></span></li>
+                <li><span class="nav-button icon-warning"></span></li>
+            </ul>
+            <form action="#" method="post">
+                <div>
+                    <label class="search-wrapper">
+                        <span class="icon-search"></span>
+                        <input type="search">
+                    </label>
+                </div>
+            </form>
+        </header>
+        <main>
+            <ul class="list-letters">
+                <li class="letters-item">
+                    <h2 class="title-letter">Congratulations...!</h2>
+                    <div class="info-letter">
+                        <span class="icon-star-empty"></span>
+                        <span class="name-sender">Jose Mourinho</span>
+                        <span class="name-recipient"> to Kamal Chaneman</span>
+                        <time class="time-sender">1/19/15, 8:05 AM</time>
+                    </div>
+                    <div class="content-letters">
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem necelit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio,
+                        </p>
+
+                        <p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper
+                        </p>
+
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
+                        Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus
+                        commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas
+                        faucibus mollis interdum.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </section>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#wrapper').jScrollPane();
+    });
+</script>
+<script src="js/removing-gaps.js"></script>
+</body>
+</html>
