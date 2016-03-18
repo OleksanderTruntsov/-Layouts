@@ -1,7 +1,9 @@
 html, body, .clean {
     height: 100%;
 }
+
 body {
+    min-width: 1300px;
     font-family: 'Roboto', sans-serif;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -22,9 +24,14 @@ body {
     border: 1px solid #8795b5;
     color: #eef1f7;
 }
+
 /*
     Menu section
 */
+.menu-section .jspPane {
+    width: 205px !important;
+}
+
 .menu-section {
     width: 15%;
     height: 100%;
@@ -33,25 +40,40 @@ body {
 }
 
 .logo a {
+    position: relative;
     width: 100%;
     text-align: center;
-    background: #eef1f7;
-    border: 1px solid #dadfea;
-    font-size: 26px;
-    color: #687189;
+    background: #2a394f;
+    border: 1px solid #2a394f;
+    font-size: 30px;
+    color: #e2e5eb;
     display: inline-block;
-    padding: 11px 0;
+    padding: 9px 0;
 }
+
 .logo a:hover {
     transition: .6s;
-    border: 1px solid #8795b5;
-    background-color: #8795b5;
-    color: #eef1f7;
+    color: #f0f3f9;
+}
+
+.logo .first-logo {
+    position: relative;
+    top: 0;
+    left: -15px;
+}
+
+.logo .second-logo {
+    position: absolute;
+    top: 9px;
+    font-size: 10px;
+    color: #fbffe8;
+    left: 115px;
 }
 
 .menu-section .menu-list {
     position: relative;
-    background-color:  #364760;
+    overflow: auto;
+    background-color: #364760;
     height: calc(100% - 50px);
 }
 
@@ -107,12 +129,29 @@ menu .menu-item:hover {
     border-radius: 3px;
 }
 
-.type-client { background-color: #7974d0; }
-.type-memo { background-color: #01caa0; }
-.type-family { background-color: #f8975a; }
-.type-work { background-color: #00adef; }
-.type-read { background-color: rgb(255, 94, 84); }
-.list-type-massage { padding-top: 15px; }
+.type-client {
+    background-color: #7974d0;
+}
+
+.type-memo {
+    background-color: #01caa0;
+}
+
+.type-family {
+    background-color: #f8975a;
+}
+
+.type-work {
+    background-color: #00adef;
+}
+
+.type-read {
+    background-color: rgb(255, 94, 84);
+}
+
+.list-type-massage {
+    padding-top: 15px;
+}
 
 .list-type-massage .menu-item {
     padding: 12px 25px;
@@ -121,12 +160,9 @@ menu .menu-item:hover {
 }
 
 .list-settings {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background: #2a394f;
 }
+
 .settings-item {
     display: inline-block;
     border-top: 2px solid transparent;
@@ -134,6 +170,7 @@ menu .menu-item:hover {
     padding: 7px 9px;
     font-size: 20px;
 }
+
 .settings-item:hover {
     transition: .4s;
     border-color: #00adef;
@@ -141,6 +178,40 @@ menu .menu-item:hover {
     background: #364760;
     color: #fff;
 }
+
+.profile {
+    text-align: center;
+    border-bottom: 4px solid #2a394f;
+    padding: 0 0 20px;
+    color: #fff;
+}
+
+.profile span {
+    padding: 0 8px;
+}
+
+.profile img {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.profile a {
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 15px;
+    background: #6183a6;
+
+    margin-top: 15px;
+    color: #fff;
+}
+
+.profile a:hover {
+    transition: .4s;
+    background: rgb(255, 94, 84);
+}
+
 /*
    Contacts section
 */
@@ -155,44 +226,52 @@ menu .menu-item:hover {
     justify-content: space-between;
     padding: 6px 10px;
     border: 1px solid #dadfea;
-    background-color:  #eef1f7;
+    background-color: #eef1f7;
 }
+
 .contacts-section-nav .number-posts {
-    color:  #687189;
+    color: #687189;
     font-size: 14px;
     padding: 11px;
 }
+
 .list-massage {
     overflow: auto;
     height: calc(100vh - 50px);
 }
+
 .massage-item-naw {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-    color:  #c9ced1;
+    color: #c9ced1;
 }
+
 .massage-item-naw .icon-star-empty:hover {
     color: #f4bc2b;
     cursor: pointer;
 }
+
 .name-user {
     display: inline-block;
     width: 250px;
-    color:  #ababab;
+    color: #ababab;
     font-size: 12px;
     font-weight: 400;
 }
+
 .sending-time {
-    color:  #4f4f4f;
+    color: #4f4f4f;
     font-size: 12px;
     font-weight: 400;
 }
+
 .small-user-foto {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
+
 .massage-item {
     padding: 10px 10px 10px 8px;
     border-right: 1px solid #dadfea;
@@ -200,31 +279,49 @@ menu .menu-item:hover {
     border-left: 4px solid transparent;
 }
 
-.type-client-message { border-left-color: #7974d0; }
-.type-memo-message { border-left-color: #01caa0; }
-.type-family-message { border-left-color: #f8975a }
-.type-work-message { border-left-color: #00adef; }
-.type-read-message { border-left-color: rgb(255, 94, 84); }
+.type-client-message {
+    border-left-color: #7974d0;
+}
+
+.type-memo-message {
+    border-left-color: #01caa0;
+}
+
+.type-family-message {
+    border-left-color: #f8975a
+}
+
+.type-work-message {
+    border-left-color: #00adef;
+}
+
+.type-read-message {
+    border-left-color: rgb(255, 94, 84);
+}
 
 .massage-item-content {
     display: flex;
     justify-content: center;
 }
+
 .massage-item-content-wrapper {
     padding: 0 0 0 20px;
 }
+
 .massage-title {
-    color:  #4f4f4f;
+    color: #4f4f4f;
     font-size: 13px;
     line-height: 18px;
     font-weight: 700;
 }
+
 .massage-text {
-    color:  #ababab;
+    color: #ababab;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px
 }
+
 /*
    Letters section
 */
@@ -239,7 +336,7 @@ menu .menu-item:hover {
     justify-content: space-between;
     border: 1px solid #dadfea;
     background-color: #eef1f7;
-    padding: 6px 10px;
+    padding: 5.5px 10px;
     margin-left: -1px;
 }
 
@@ -323,4 +420,47 @@ menu .menu-item:hover {
     font-size: 13px;
     font-weight: 400;
     line-height: 22px;
+}
+
+#modal_form {
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid #9e9e9e;
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+
+#modal_form #modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+/* Пoдлoжкa */
+#overlay {
+    z-index: 3;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.2;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
 }

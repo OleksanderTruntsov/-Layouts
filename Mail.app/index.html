@@ -20,10 +20,21 @@
     <!--Menu section-->
     <section class="menu-section">
         <header>
-            <h1 class="logo"><a href="#">Mail.app</a></h1>
+            <h1 class="logo">
+                <a href="#">
+                    <span class="first-logo">Mail</span>
+                    <span class="second-logo">write or die</span>
+                </a>
+            </h1>
         </header>
-        <main class="menu-list">
+        <main id="wrapperMenu" class="menu-list">
             <menu>
+                <li class="profile">
+                    <img src="images/user_1.jpg" alt="Foto user">
+                    <span class="name-profile">Jose Mourinho</span>
+                    <a id="go" href="#">Edit profile</a>
+                </li>
+
                 <li class="menu-item">
                     <span class="icon-menu icon-drawer"></span>
                     <span class="menu-item-name">Inbox</span>
@@ -47,6 +58,7 @@
                     <span class="menu-item-name">Trash</span>
                 </li>
             </menu>
+
             <ul class="list-type-massage">
                 <li class="menu-item">
                     <span>Clients</span>
@@ -93,7 +105,7 @@
             </ul>
         </header>
         <main>
-            <ul class="list-massage" id="wrapper">
+            <ul class="list-massage" id="wrapperMassage">
                 <li class="massage-item type-memo-message">
                     <div class="massage-item-naw">
                         <span class="icon-star-empty"></span>
@@ -211,21 +223,29 @@
                         <time class="time-sender">1/19/15, 8:05 AM</time>
                     </div>
                     <div class="content-letters">
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem necelit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet
-                        rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio,
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+                            necelit.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue
+                            laoreet
+                            rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cras justo
+                            odio,
                         </p>
 
-                        <p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper
+                        <p>Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget
+                            metus.
+                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+                            elit.
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                            ullamcorper
                         </p>
 
                         <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam.
-                        Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
-                        Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus
-                        commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas
-                        faucibus mollis interdum.
+                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis
+                            interdum.
+                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac
+                            cursus
+                            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas
+                            faucibus mollis interdum.
                         </p>
                     </div>
                 </li>
@@ -233,9 +253,39 @@
         </main>
     </section>
 </div>
+
+<div id="modal_form"><!-- Сaмo oкнo -->
+    <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+    <!-- Тут любoе сoдержимoе -->
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
 <script type="text/javascript">
-    $(function(){
-        $('#wrapper').jScrollPane();
+    $(function () {
+        $('#wrapperMassage').jScrollPane();
+        $('#wrapperMenu').jScrollPane();
+    });
+</script>
+<script>
+    $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
+        $('a#go').click( function(event){ // лoвим клик пo ссылки с id="go"
+            event.preventDefault(); // выключaем стaндaртную рoль элементa
+            $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+                    function(){ // пoсле выпoлнения предъидущей aнимaции
+                        $('#modal_form')
+                                .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+                                .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+                    });
+        });
+        /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+        $('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+            $('#modal_form')
+                    .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+                            function(){ // пoсле aнимaции
+                                $(this).css('display', 'none'); // делaем ему display: none;
+                                $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                            }
+                    );
+        });
     });
 </script>
 <script src="js/removing-gaps.js"></script>
